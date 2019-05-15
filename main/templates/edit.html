@@ -1,0 +1,8 @@
+<h1>글 수정하기 페이지</h1>
+
+<form action="{% url 'update' board_target.id  %}".>
+   <input  제목:  type="text" name="title" value="{{board_target.title}}"><br><br>
+   <textarea  내용:  name="content">{{ board_target.text}} </textarea><br><br>
+    <input type="submit" value="수정하기"><br>
+    
+</form>

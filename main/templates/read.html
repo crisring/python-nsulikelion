@@ -1,0 +1,8 @@
+<h1>자세하게 읽는중</h1>
+
+<p> 제목: {{ read.title }} </p>
+<p> 내용: {{ read.txt }} </p>
+<p> 작성일자: {{ read.created_at }} </p>
+
+<a href ="{% url 'edit' read.id %">수 정 하 기</a>
+<a href ="{% url 'delete' read.id %}">삭 제 하 기</a>
